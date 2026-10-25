@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { calculateStats } from '../utils/stats';
 
 export default function StatsBar({ tasks, onClearDone }) {
-  const stats = calculateStats(tasks);
+  const stats = calculateStats(tasks.items);
   return (
     <View style={styles.bar}>
       <Text style={styles.text}>
